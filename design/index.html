@@ -1,0 +1,519 @@
+
+<html lang=""><head>
+    <title>微信小程序设计规范 · MINA</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta name="description" content="">
+    <meta name="generator" content="GitBook 3.2.0">
+
+
+
+
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+
+
+
+    <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+
+
+
+    <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+
+
+
+</head>
+<body>
+
+<div class="book with-summary">
+    <div>
+
+        <div class="sub_nav_box">
+            <div class="sub_nav_inner">
+
+
+
+
+                <ul class="top_sub_nav">
+
+
+
+
+                    <li class="sub_nav_item selected" data-level="1.1" data-path="./">
+
+                        <a href="./">
+
+
+                            微信小程序设计规范
+
+                        </a>
+
+                    </li>
+
+
+
+
+                </ul>
+
+
+
+
+                <!-- <h1>微信小程序设计规范</h1> -->
+                <div id="book-search-input" role="search">
+                    <form>
+                        <label for="search-input" class="search-icon" id="js-search-icon"></label>
+                        <input type="text" id="search-input" name="search-input" placeholder="搜索">
+                        <button type="reset" class="clear-input-btn"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="book-summary">
+
+
+            <nav role="navigation">
+
+
+
+
+
+                <ul class="summary">
+
+
+                    <li class="chapter  open" data-level="1.1.1" data-path="./">
+
+                        <a href="./#一、友好礼貌">
+
+
+                            一、 友好礼貌
+
+                        </a>
+
+
+
+                        <ul class="articles">
+
+
+                            <li class="chapter  " data-level="1.1.1.1" data-path="./">
+
+                                <a href="./#1重点突出">
+
+
+                                    1. 重点突出
+
+                                </a>
+
+
+
+                            </li>
+
+                            <li class="chapter  " data-level="1.1.1.2" data-path="./">
+
+                                <a href="./#2流程明确">
+
+
+                                    2. 流程明确
+
+                                </a>
+
+
+
+                            </li>
+
+
+                        </ul>
+
+                    </li>
+
+                    <li class="chapter  open" data-level="1.1.2" data-path="./">
+
+                        <a href="./#二、清晰明确">
+
+
+                            二、 清晰明确
+
+                        </a>
+
+
+
+                        <ul class="articles">
+
+
+                            <li class="chapter  " data-level="1.1.2.1" data-path="./">
+
+                                <a href="./#1导航明确，来去自如">
+
+
+                                    1. 导航明确，来去自如
+
+                                </a>
+
+
+
+                            </li>
+
+                            <li class="chapter  " data-level="1.1.2.2" data-path="./">
+
+                                <a href="./#2减少等待，反馈及时">
+
+
+                                    2. 减少等待，反馈及时
+
+                                </a>
+
+
+
+                            </li>
+
+                            <li class="chapter  " data-level="1.1.2.3" data-path="./">
+
+                                <a href="./#3异常可控，有路可退">
+
+
+                                    3. 异常可控，有路可退
+
+                                </a>
+
+
+
+                            </li>
+
+
+                        </ul>
+
+                    </li>
+
+                    <li class="chapter  open" data-level="1.1.3" data-path="./">
+
+                        <a href="./#三、便捷优雅">
+
+
+                            三、 便捷优雅
+
+                        </a>
+
+
+
+                        <ul class="articles">
+
+
+                            <li class="chapter  " data-level="1.1.3.1" data-path="./">
+
+                                <a href="./#1减少输入">
+
+
+                                    1. 减少输入
+
+                                </a>
+
+
+
+                            </li>
+
+                            <li class="chapter  " data-level="1.1.3.2" data-path="./">
+
+                                <a href="./#2避免误操作">
+
+
+                                    2. 避免误操作
+
+                                </a>
+
+
+
+                            </li>
+
+                            <li class="chapter  " data-level="1.1.3.3" data-path="./">
+
+                                <a href="./#3利用接口提升性能">
+
+
+                                    3. 利用接口提升性能
+
+                                </a>
+
+
+
+                            </li>
+
+
+                        </ul>
+
+                    </li>
+
+                    <li class="chapter  " data-level="1.1.4" data-path="./">
+
+                        <a href="./#四、统一稳定">
+
+
+                            四、 统一稳定
+
+                        </a>
+
+
+
+                    </li>
+
+                    <li class="chapter  open" data-level="1.1.5" data-path="./">
+
+                        <a href="./#五、视觉规范">
+
+
+                            五、 视觉规范
+
+                        </a>
+
+
+
+                        <ul class="articles">
+
+
+                            <li class="chapter  " data-level="1.1.5.1" data-path="./">
+
+                                <a href="./#1字体规范">
+
+
+                                    1. 字体规范
+
+                                </a>
+
+
+
+                            </li>
+
+                            <li class="chapter  " data-level="1.1.5.2" data-path="./">
+
+                                <a href="./#2列表视觉规范">
+
+
+                                    2. 列表视觉规范
+
+                                </a>
+
+
+
+                            </li>
+
+                            <li class="chapter  " data-level="1.1.5.3" data-path="./">
+
+                                <a href="./#3表单输入视觉规范">
+
+
+                                    3. 表单输入视觉规范
+
+                                </a>
+
+
+
+                            </li>
+
+                            <li class="chapter  " data-level="1.1.5.4" data-path="./">
+
+                                <a href="./#4按钮使用原则">
+
+
+                                    4. 按钮使用原则
+
+                                </a>
+
+
+
+                            </li>
+
+                            <li class="chapter  " data-level="1.1.5.5" data-path="./">
+
+                                <a href="./#5图标使用原则">
+
+
+                                    5. 图标使用原则
+
+                                </a>
+
+
+
+                            </li>
+
+
+                        </ul>
+
+                    </li>
+
+
+                </ul>
+
+
+            </nav>
+
+
+        </div>
+
+        <div class="book-body">
+
+            <div class="body-inner">
+
+                <!--                     
+                
+                <div class="book-header" role="navigation">
+                    
+                </div>
+                
+                
+                 -->
+
+                <div class="page-wrapper" tabindex="-1" role="main">
+                    <div class="page-inner">
+
+                        <div id="book-search-results">
+                            <div class="search-noresults">
+
+                                <section class="normal markdown-section">
+
+                                    <h1 id="概要">概要</h1><p>基于微信小程序轻快的特点，我们拟定了小程序界面设计指南和建议。
+                                    设计指南建立在充分尊重用户知情权与操作权的基础之上。旨在微信生态体系内，建立友好、高效、一致的用户体验，同时最大程度适应和支持不同需求，实现用户与小程序服务方的共赢。</p><h2 id="一、友好礼貌">一、友好礼貌</h2><p>为了避免用户在微信中使用小程序服务时，注意力被周围复杂环境干扰，小程序在设计时应该注意减少无关的设计元素对用户目标的干扰，礼貌地向用户展示程序提供的服务，友好地引导用户进行操作。</p><h3 id="1重点突出">1.重点突出</h3><p>每个页面都应有明确的重点，以便于用户每进入一个新页面的时候都能快速地理解页面内容，在确定了重点的前提下，应尽量避免页面上出现其他干扰项影响用户的决策和操作。</p><h4 id="反例示意">反例示意</h4><p>此页面的主题是查询，却添加了诸多与查询不相关的业务入口，与用户的预期不符，易造成用户的迷失。</p><p><img alt="07" src="image/1-1-1.png"></p><h4 id="纠正示意">纠正示意</h4><p>去掉任何与用户目标不相关的内容，明确页面主题，在技术和页面控件允许的前提下提供有助于用户目标的帮助内容，比如最近搜索词，常用搜索词等。</p><p><img alt="08" src="image/1-1-2.png"></p><h4 id="反例示意">反例示意</h4><p>操作没有主次，让用户无从选择</p><p><img src="image/1-1-3.png"></p><h4 id="纠正示意">纠正示意</h4><p>首先要避免并列过多操作让用户选额，在不得不并列多个操作时，需区分操作主次，减轻用户的选择难度。</p><p><img alt="10" src="image/1-1-4.png"></p><h3 id="2流程明确">2.流程明确</h3><p>为了让用户顺畅地使用页面，在用户进行某一个操作流程时，应避免出现用户目标流程之外的内容而打断用户。</p><h4 id="反例示意">反例示意</h4><p>用户本打算进行搜索，在进入页面时却被突如其来的抽奖弹窗所打断；对于抽奖没有兴趣的用户是非常不友好的干扰； 而即便有部分用户确实被“诱人”的抽奖活动所吸引，离开主流程去抽奖之后可能就遗忘了原本的目标，进而失去了对产品真正价值的利用和认识。</p><p><img src="image/1-2-1.png"></p><h2 id="二、清晰明确">二、清晰明确</h2><p>一旦用户进入我们的小程序页面，我们就有责任和义务清晰明确地告知用户身在何处、又可以往何处去，确保用户在页面中游刃有余地穿梭而不迷路，这样才能为用户提供安全的愉悦的使用体验。</p><h3 id="1导航明确，来去自如">1.导航明确，来去自如</h3><p>导航是确保用户在网页中浏览跳转时不迷路的最关键因素。导航需要告诉用户，我在哪，我可以去哪，如何回去等问题。首先在微信系统内的所有小程序的全部页面，均会自带微信提供的导航栏，统一解决我在哪，如何回去的问题。在微信层级导航保持体验一致，有助于用户在微信内形成统一的体验和交互认知，无需在各小程序和微信切换中新增学习成本或改变使用习惯。</p><h4 id="微信导航栏">微信导航栏</h4><p>微信导航栏，直接继承于客户端，除导航栏颜色之外，开发者无需亦不可以对其中的内容进行自定义。但开发者需要规定小程序各个页面的跳转关系，让导航系统能够以合理的方式工作。</p><p>微信导航栏分为导航区域、标题区域以及操作区域。其中导航区控制程序页面进程。目前导航栏分深浅两种基本配色，在iOS和Android展示有所不同，如下图所示：</p><h5 id="导航区（ios）">导航区（iOS）</h5><p>导航区通常只有一个操作，即返回上一级界面。开发者可定义其内容，不可对样式进行修改</p><h5 id="导航区（android）">导航区（Android）</h5><p>系统导航左侧唯一的操作为“离开小程序，回到微信，程序后台运行”。而点击安卓手机自带的硬件返回键时，则为返回上一级页面。</p><p><img alt="default" src="image/2-1-1.png"></p><h5 id="微信导航栏自定义颜色规则（ios和android）">微信导航栏自定义颜色规则（iOS和Android）</h5><p>小程序导航栏支持基本的背景颜色自定义功能，选择的颜色需要在满足可用性前提下，和谐搭配微信提供的两套主导航栏图标。建议参考以下选色效果：</p><p>选色方案示例</p><p><img alt="default" src="image/2-1-2.png"></p><h5 id="页面内导航">页面内导航</h5><p>开发者可根据自身功能设计需要在页面内添加自有导航。并保持不同页面间导航一致。但是受限于手机屏幕尺寸的限制，小程序页面的导航应尽量简单，若仅为一般线性浏览的页面建议仅使用微信导航栏即可。</p><p>微信控件库提供标签分页（Tab）导航供开发者选择。标签分页栏可固定在页面顶部或者底部，便于用户在不同的分页间做切换。为确保点击区域，标签不得超过4项。一个页面也不应出现一组以上的标签分页栏。</p><p>标签分页栏选中态默认为100%实色，未选中态带有60%，其中选中态颜色可自定义。在自定义颜色选择中，务必注意保持分页栏标签的可用性、可视性和可操作性。
+                                    <img src="image/2-2-7.png"></p><p><img src="image/2-2-8.png"></p><h3 id="2减少等待，反馈及时">2.减少等待，反馈及时</h3><p>页面的过长时间的等待会引起用户的不良情绪，使用微信小程序项目提供的技术已能很大程度缩短等待时间。即便如此，当不可避免的出现了加载和等待的时候，需要予以及时的反馈以舒缓用户等待的不良情绪。</p><h4 id="启动页加载">启动页加载</h4><p>小程序启动页是小程序在微信内容一定程度上展现品牌特征的页面之一。本页面将突出展示小程序品牌特征和加载状态。启动页除品牌标志（Logo）展示外，页面上的其他所有元素如加载进度指示，均由微信统一提供且不能更改，无需开发者开发。</p><p><img src="image/2-2-1.png"></p><h4 id="页面下拉刷新加载">页面下拉刷新加载</h4><p>在微信小程序内，微信提供标准的页面下拉刷新加载能力和样式。
+                                    开发者可自定义需要通过下拉交互完成刷新的页面，此类交互微信将提供标准能力和样式。在样式上，刷新图标与下拉标示配色已捆绑，分为深浅两套方案，开发者在使用时，应注意头部文字、下拉标识与刷新图标的和谐统一。当用户在该类页面做出下拉交互时，出现微信小程序页面标准加载动画。开发者无需自行开发样式</p><h5 id="开发者未定义标签分页tab">开发者未定义标签分页(tab)</h5><p>若定义该页面可通过下拉动作刷新，则刷新后加载状态提示与小程序品牌展示区出现在标题栏之下，页面顶部。
+                                    <img src="image/6-1-1.png"></p><h5 id="开发者定义了标签分页tab">开发者定义了标签分页(tab)</h5><p>并定义该Tab下的内容页面可通过下拉动作刷新，则刷新后加载状态提示与小程序品牌展示区出现在顶部Tab之下，且仅刷新当前页面内容。开发者暂无法自行定义此加载效果</p><p><img src="image/2-2-5.png"></p><h4 id="深浅两套下拉样式">深浅两套下拉样式</h4><p>微信下拉提示用于给用户明确的小程序归属者，防止造假与作弊。此处标示提供深浅两套方案，文字颜色不可自定义，开发者在自定义背景色时，应注意保证下拉标示的辨识度。iOS和Android配色方案相同如下展示。</p><p><img alt="default" src="image/2-2-4.png"></p><h4 id="微信下拉标示错误使用案例">微信下拉标示错误使用案例</h4><p>请避免以下错误使用情况，确保信息的可见性和页面的可用性</p><p><img alt="default" src="image/2-2-6.png"></p><p><img alt="tab _2" src="image/2-2-8.png"></p><h4 id="页面内加载反馈">页面内加载反馈</h4><p>开发者可在小程序里自定义页面内容的加载样式。建议不管是使用在局部还是全体，自定义加载样式都应该尽可能简洁，并使用简单动画告知用户加载过程。 开发者也可以使用微信提供的，统一的页面加载样式，如图中例所示。</p><p><img alt="23 2" src="image/2-3-1.png"></p><h4 id="模态加载">模态加载</h4><p>模态的加载样式将覆盖整个页面的，由于无法明确告知具体加载的位置或内容将可能引起用户的焦虑感，因此应谨慎使用。除了在某些全局性操作下不要使用模态的菊花。</p><p><img alt="24" src="image/2-3-2.png"></p><h4 id="局部加载反馈">局部加载反馈</h4><p>即只在触发加载的页面局部进行反馈，这样的反馈机制更加有针对性，页面改动小，是微信推荐的反馈方式。例如：
+                                    <img alt="25" src="image/2-3-3.png"></p><h4 id="加载反馈注意事项">加载反馈注意事项</h4><ul><li>若载入时间较长,应提供取消操作,并使用进度条显示载入的进度。
+                                </li>
+                                    <li>载入过程中,应保持动画效果 ; 无动画效果的加载很容易让人产生该界面已经卡死的错觉。
+                                    </li>
+                                    <li>不要在同一个页面同时使用超过1个加载动画。
+                                    </li></ul>
+                                    <h4 id="结果反馈">结果反馈</h4><p>除了在用户等待的过程中需予以及时反馈外，对操作的结果也需要予以明确反馈。根据实际情况，可选择不同的结果反馈样式。对于页面局部的操作，可在操作区域予以直接反馈，对于页面级操作结果，可使用弹出式提示（Toast）、模态对话框或结果页面展示。</p><h4 id="页面局部操作结果反馈">页面局部操作结果反馈</h4><p>对于页面局部的操作，可在操作区域予以直接反馈，例如点击多选控件前后如下图。对于常用控件，微信设计中心将提供控件库，其中的控件将提供完整操作反馈。</p><p><img alt="28" src="image/2-3-4.png"></p><h4 id="页面全局操作结果——弹出式提示（toast）">页面全局操作结果——弹出式提示（Toast）</h4><p>弹出式提示（Toast）适用于轻量级的成功提示，1.5秒后自动消失，并不打断流程，对用户影响较小，适用于不需要强调成功状态的操作提醒。特别注意该形式不适用于任何错误提醒。</p><p><img alt="29" src="image/2-3-5.png"></p><h4 id="页面全局操作结果——模态对话框">页面全局操作结果——模态对话框</h4><p>对于需要用户明确知晓的操作结果状态可通过模态对话框来提示，并可附带下一步操作指引。</p><p><img alt="30" src="image/2-3-6.png"></p><h4 id="页面全局操作结果—结果页">页面全局操作结果—结果页</h4><p>对于操作结果已经是当前流程的终结的情况，可使用操作结果页来反馈。这种方式最为强烈和明确的告知用户操作已经完成，并可根据实际情况给出下一步操作的指引。</p><p><img alt="31" src="image/2-3-7.png"></p><h3 id="3异常可控，有路可退">3.异常可控，有路可退</h3><p>在设计任何的任务和流程时，异常状态和流程往往容易被忽略，而这些异常场景往往是用户最为沮丧和需要帮助的时候，因此需要格外注意异常状态的设计，在出现异常时予以用户必要的状态提示，并告知解决方案，使其有路可退。</p><p>要杜绝异常状态下，用户莫名其妙又无处可去，卡在某一个页面的情况。2.2中所提到的弹窗和结果页面都可作为异常状态的提醒方式。除此之外，在表单页面中尤其是表单项较多的页面中，还应明确指出出错项目，以便用户修改。</p><h4 id="异常状态——表单出错">异常状态——表单出错</h4><p>表单报错，在表单顶部告知错误原因，并标识出错误字段提示用户修改</p><p><img alt="33" src="image/2-3-8.png"></p><h2 id="三、便捷优雅">三、便捷优雅</h2><p>从PC时代的物理键盘鼠标到移动端时代手指，虽然输入设备极大精简，但是手指操作的准确性却大大不如键盘鼠标精确。为了适应这个变化，需要开发者在设计过程中充分利用手机特性，让用户便捷优雅的操控界面。</p><h3 id="1减少输入">1.减少输入</h3><p>由于手机键盘区域小且密集，输入困难的同时还易引起输入错误，因此在设计小程序页面时因尽量减少用户输入，利用现有接口或其他一些易于操作的选择控件来改善用户输入的体验。</p><h4 id="减少输入，巧用接口">减少输入，巧用接口</h4><p>例如下图中，在添加银行卡时，采用摄像头识别接口来帮助用户输入。除此之外微信团队还对外开放例如地理位置接口等多种微信小程序接口 ，充分利用这些接口将大大提高用户输入的效率和准确性，进而优化体验。</p><p><img alt="36" src="image/3-1-1.png"></p><p>除了利用接口外，在不得不让用户进行手动输入时，应尽量让用户做选择而不是键盘输入。一方面，回忆易于记忆，让用户在有限的选项中做选择通常来说是容易于完全靠记忆输入；另一方面，仍然是考虑到手机键盘密集的单键输入极易造成输入错误。 例如图中，在用户搜索时提供搜索历史快捷选项将帮助用户快速进行搜索，而减少或避免不必要是键盘输入。</p><p><img alt="08" src="image/3-1-2.png"></p><h3 id="2避免误操作">2.避免误操作</h3><p>因为在手机上我们通过手指触摸屏幕来操控界面，手指的点击精确度远不如鼠标，因此在设计页面上需点击的控件时，需要充分考虑到其热区面积，避免由于可点击区域过小或过于密集而造成误操作。当简单的将原本在电脑屏幕上使用的界面不做任何适配直接移植到手机上时，往往就容易出现这样的问题。由于手机屏幕分辨率各不相同，因此最适宜点击像素尺寸也不完全一致，但换算成物理尺寸后大致是在7mm-9mm之间。在微信提供的标准组件库中，各种控件元素均已考虑到了页面点击效果以及不同屏幕的适配，因此再次推荐使用或模仿标准控件尺寸进行设计。</p><h3 id="3利用接口提升性能">3.利用接口提升性能</h3><p>微信设计中心已推出了一套网页标准控件库，包括<a href="https://github.com/weui/weui-sketch" target="_blank">sketch设计控件库</a>和<a href="https://wximg.gtimg.com/shake_tv/mina/WeUI1.0.psd.zip?t=1474514891650&amp;t=1474557491313" target="_blank">Photoshop设计控件库</a>，后续还将完善小程序组件，这些控件都已充分考虑了移动端页面的特点，能够保证其在移动端页面上的可用性和操作性能；同时微信开发团队也在不断完善和扩充微信小程序接口，并提供微信公共库，利用这些资源不但能够为用户提供更加快捷的服务，而且对页面性能的提高有极大作用，无形之中提升了用户体验。</p><h2 id="四、统一稳定">四、统一稳定</h2><p>除了以上所提到的种种原则，建议接入微信的小程序还应该时刻注意不同页面间的统一性和延续性，在不同的页面尽量使用一致的控件和交互方式。</p><p>统一的页面体验和有延续性的界面元素都将帮助用最少的学习成本达成使用目标，减轻页面跳动所造成的不适感。正因如此，小程序可根据需要使用微信提供的标准控件，以达到统一稳定的目的。</p><h2 id="五、视觉规范">五、视觉规范</h2><p>为方便设计师进行设计，微信提供一套可供Web设计和小程序使用的基础控件库；同时提供方便开发者调用的资源。</p><ul class="weui_res_download_list" id="weui_res_download_list">
+                                    <li class="res_download_item">
+                                        <div class="item_inner">
+                                            <i class="res_download_icon icon_sketch"></i>
+                                            <p class="res_download_title"><a href="https://github.com/weui/weui" target="_blank">We-UI_sketch组件库</a></p>
+                                            <a class="res_download_opr" href="https://wximg.gtimg.com/shake_tv/mina/WEUI_1_0_Sketch.zip" target="_blank">下载</a>
+                                        </div>
+                                    </li>
+                                    <li class="res_download_item">
+                                        <div class="item_inner">
+                                            <i class="res_download_icon icon_ps"></i>
+                                            <p class="res_download_title">We-UI_PS组件库</p>
+                                            <a class="res_download_opr" href="https://wximg.gtimg.com/shake_tv/mina/WeUI1.0.psd.zip" target="_blank">下载</a>
+                                        </div>
+                                    </li>
+                                </ul>
+
+
+
+                                    <p>预览地址：<a href="https://weui.io/" target="_blank">https://weui.io</a></p><h3 id="1字体规范">1.字体规范</h3><p>微信内字体的使用与所运行的系统字体保持一致，常用字号为20, 18, 17, 16,14 13, 11(pt)，使用场景具体如下：</p><p><img alt="42" src="image/5-1-1.png"></p><h4 id="字体颜色">字体颜色</h4><p><img alt="44" src="image/5-1-3.png"></p><p>主内容 Black 黑色，次要内容 Grey 灰色；时间戳与表单缺省值 Light 灰色；大段的说明内容而且属于主要内容用 Semi 黑；</p><p><img alt="45" src="image/5-1-4.png"></p><p>蓝色为链接用色，绿色为完成字样色，红色为出错用色
+                                    Press与 Disable状态分别降低透明度为20%与10%；</p><p><img alt="46" src="image/5-1-5.png"></p><h3 id="2列表视觉规范">2.列表视觉规范</h3><p><img alt="47list" src="image/5-2-1.png"></p><h3 id="3表单输入视觉规范">3.表单输入视觉规范</h3><p><img alt="48" src="image/5-3-1.png"></p><h3 id="4按钮使用原则">4.按钮使用原则</h3><h4 id="列表外按钮上文字标准">列表外按钮上文字标准</h4><p>按钮高度为44px下使用:
+                                    颜色 ＃000000 / ＃353535
+                                    字号 18pt</p><ul><li><p>可点状态下文字调整透明度为60%</p></li>
+                                    <li><p>不可点状态下文字调整透明度为30%</p><p><img alt="49" src="image/5-4-1.png"></p></li></ul>
+                                    <h4 id="列表外按钮上文字标准">列表外按钮上文字标准</h4><p>按钮高度为25px下使用:
+                                    颜色 ＃000000 / ＃353535
+                                    字号 14pt</p><h4 id="页面线性按钮上文字标准">页面线性按钮上文字标准</h4><p>按钮高度为35px下使用:
+                                    颜色 ＃09BB07 / ＃353535
+                                    字号 16pt</p><p><img alt="50" src="image/5-4-2.png"></p><h3 id="5图标使用原则">5.图标使用原则</h3><p><img alt="51" src="image/5-5-1.png"></p>
+
+                                </section>
+
+                            </div>
+                            <div class="search-results">
+                                <div class="has-results">
+
+                                    <h1 class="search-results-title"><span class="search-results-count"></span> 个结果 "<span class="search-query"></span>"</h1>
+                                    <ul class="search-results-list"></ul>
+
+                                </div>
+                                <div class="no-results">
+
+                                    <h1 class="search-results-title">没有找到相关内容 "<span class="search-query"></span>"</h1>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="foot" id="footer">
+                    <ul class="links ft">
+                        <li class="links_item"><a href="">关于腾讯</a></li>
+                        <li class="links_item"><a href="">服务协议</a></li>
+                        <li class="links_item"><a href="">运营规范</a></li>
+                        <li class="links_item"><a href="">辟谣中心</a></li>
+                        <li class="links_item"><a href="">客服中心</a></li>
+                        <li class="links_item"><a href="">联系邮箱</a></li>
+                        <li class="links_item"><a href="">侵权投诉</a></li>
+                        <li class="links_item">
+                            <p class="copyright">Copyright © 2012-<span id="s_copyright_year"></span> Tencent. All Rights Reserved.</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+
+
+    <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+
+
+
+    <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+
+
+
+    <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+
+
+
+    <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"微信小程序设计规范","level":"1.1","depth":1,"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"ignoreSpecialCharacters":false,"maxIndexSize":1000000},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"file":{"path":"README.md","mtime":"2016-09-22T15:16:08.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-09-22T15:18:08.633Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+
+
+
+
+</div></body></html>

@@ -1,0 +1,336 @@
+
+<html lang=""><head>
+    <title>Q&amp;A · MINA</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta name="description" content="">
+    <meta name="generator" content="GitBook 3.2.0">
+
+
+
+
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+
+
+
+    <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+
+
+
+    <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+
+    <link rel="next" href="contact.html">
+
+
+    <link rel="prev" href="../devtools/download.html">
+
+
+</head>
+<body>
+
+<div class="book with-summary">
+    <div>
+
+        <div class="sub_nav_box">
+            <div class="sub_nav_inner">
+
+
+
+
+                <ul class="top_sub_nav">
+
+
+
+
+                    <li class="sub_nav_item " data-level="1.1" data-path="../">
+
+                        <a href="../">
+
+
+                            简易教程
+
+                        </a>
+
+                    </li>
+
+                    <li class="sub_nav_item " data-level="1.2" data-path="../framework/MINA.html">
+
+                        <a href="../framework/MINA.html">
+
+
+                            框架
+
+                        </a>
+
+                    </li>
+
+                    <li class="sub_nav_item " data-level="1.3" data-path="../component/">
+
+                        <a href="../component/">
+
+
+                            组件
+
+                        </a>
+
+                    </li>
+
+                    <li class="sub_nav_item " data-level="1.4" data-path="../api/">
+
+                        <a href="../api/">
+
+
+                            API
+
+                        </a>
+
+                    </li>
+
+                    <li class="sub_nav_item " data-level="1.5" data-path="../devtools/devtools.html">
+
+                        <a href="../devtools/devtools.html">
+
+
+                            工具
+
+                        </a>
+
+                    </li>
+
+                    <li class="sub_nav_item selected" data-level="1.6" data-path="qa.html">
+
+                        <a href="qa.html">
+
+
+                            Q&amp;A
+
+                        </a>
+
+                    </li>
+
+
+
+
+                </ul>
+
+
+
+
+                <!-- <h1>Q&A</h1> -->
+                <div id="book-search-input" role="search">
+                    <form>
+                        <label for="search-input" class="search-icon" id="js-search-icon"></label>
+                        <input type="text" id="search-input" name="search-input" placeholder="搜索">
+                        <button type="reset" class="clear-input-btn"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="book-summary">
+
+
+            <nav role="navigation">
+
+
+
+
+
+                <ul class="summary">
+
+
+                    <li class="chapter active " data-level="1.6.1" data-path="qa.html">
+
+                        <a href="qa.html">
+
+
+                            Q&amp;A
+
+                        </a>
+
+
+
+                    </li>
+
+                    <li class="chapter  " data-level="1.6.2" data-path="contact.html">
+
+                        <a href="contact.html">
+
+
+                            联系我们
+
+                        </a>
+
+
+
+                    </li>
+
+
+                </ul>
+
+
+            </nav>
+
+
+        </div>
+
+        <div class="book-body">
+
+            <div class="body-inner">
+
+                <!--                     
+                
+                <div class="book-header" role="navigation">
+                    
+                </div>
+                
+                
+                 -->
+
+                <div class="page-wrapper" tabindex="-1" role="main">
+                    <div class="page-inner">
+
+                        <div id="book-search-results">
+                            <div class="search-noresults">
+
+                                <section class="normal markdown-section">
+
+                                    <h2 id="怎么获取用户输入">怎么获取用户输入</h2><p>能够获取用户输入的组件，需要使用组件的属性bindchange将用户的输入内容同步到AppService</p><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"myInput"</span> <span class="hljs-attr">bindchange</span>=<span class="hljs-string">"bindChange"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">checkbox</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"myCheckbox"</span> <span class="hljs-attr">bindchange</span>=<span class="hljs-string">"bindChange"</span> /&gt;</span></code></pre>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> inputContent = {}
+Page({
+    data:{
+    },
+    bindChange:<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>)</span>{
+        inputContent[e.currentTarget.id] = e.detail.value
+    }
+})</code></pre>
+                                    <h2 id="为什么脚本内不能使用window对象">为什么脚本内不能使用window对象</h2><p>页面的脚本逻辑在是在AppService中运行，AppService是一个没有窗口对象的环境，所以不能再脚本中使用window，也无法在脚本中操作组件</p><h2 id="为什么zeptojquery无法使用">为什么zepto/jquery无法使用</h2><p>zepto/jquery会使用到window对象和document对象，所以无法使用。</p><h2 id="wxnavigateto无法打开页面">wx.navigateTo无法打开页面</h2><p>一个应用同时只能打开5个页面，当已经打开了5个页面之后，wx.navigateTo不能正常打开新页面。请避免多层级的交互方式，或者使用<a href="../api/ui-navigate.html#wxredirecttoobject">wx.redirectTo</a></p><h2 id="样式表不支持级联选择器">样式表不支持级联选择器</h2><p>MINA支持以<code>.</code>开始的类选择器。如：</p><pre><code>  .normal_view{
+    color:#000000;padding:10px;
+  }</code></pre>
+                                    <p>可以使用标签选择器，控制同一类组件的样式。如：使用input标签选择器控制<code>&lt;input/&gt;</code>的默认样式。</p><pre><code>  input{
+    width:100px;
+  }</code></pre>
+                                    <h2 id="本地资源无法通过css获取">本地资源无法通过css获取</h2><p>background-image：可以使用网络图片，或者base64，或者使用<code>&lt;image/&gt;</code>标签</p><h2 id="如何修改窗口的背景色">如何修改窗口的背景色</h2><p>使用page标签选择器，可以修改顶层节点的样式</p><pre><code class="lang-css"><span class="hljs-selector-tag">page</span>{
+  <span class="hljs-attribute">display</span>:block;
+  <span class="hljs-attribute">min-height</span>:<span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">background-color</span>:red;
+}</code></pre>
+
+
+                                </section>
+
+                            </div>
+                            <div class="search-results">
+                                <div class="has-results">
+
+                                    <h1 class="search-results-title"><span class="search-results-count"></span> 个结果 "<span class="search-query"></span>"</h1>
+                                    <ul class="search-results-list"></ul>
+
+                                </div>
+                                <div class="no-results">
+
+                                    <h1 class="search-results-title">没有找到相关内容 "<span class="search-query"></span>"</h1>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="foot" id="footer">
+                    <ul class="links ft">
+                        <li class="links_item"><a href="">关于腾讯</a></li>
+                        <li class="links_item"><a href="">服务协议</a></li>
+                        <li class="links_item"><a href="">运营规范</a></li>
+                        <li class="links_item"><a href="">辟谣中心</a></li>
+                        <li class="links_item"><a href="">客服中心</a></li>
+                        <li class="links_item"><a href="">联系邮箱</a></li>
+                        <li class="links_item"><a href="">侵权投诉</a></li>
+                        <li class="links_item">
+                            <p class="copyright">Copyright © 2012-<span id="s_copyright_year"></span> Tencent. All Rights Reserved.</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+
+            <a href="../devtools/download.html" class="navigation navigation-prev " aria-label="Previous page: 下载">
+                <i class="fa fa-angle-left"></i>
+            </a>
+
+
+            <a href="contact.html" class="navigation navigation-next " aria-label="Next page: 联系我们">
+                <i class="fa fa-angle-right"></i>
+            </a>
+
+
+
+        </div>
+    </div>
+
+
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+
+
+    <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+
+
+
+    <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+
+
+
+    <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+
+
+
+    <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Q&A","level":"1.6","depth":1,"next":{"title":"联系我们","level":"1.6.2","depth":2,"path":"qa/contact.md","ref":"./qa/contact.md","articles":[]},"previous":{"title":"下载","level":"1.5.5","depth":2,"path":"devtools/download.md","ref":"devtools/download.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"ignoreSpecialCharacters":false,"maxIndexSize":1000000},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"file":{"path":"qa/qa.md","mtime":"2016-09-22T03:20:50.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-09-22T09:40:22.799Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+
+
+
+
+</div></body></html>

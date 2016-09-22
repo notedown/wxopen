@@ -1,0 +1,595 @@
+
+<html lang=""><head>
+    <title>WXSS · MINA</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta name="description" content="">
+    <meta name="generator" content="GitBook 3.2.0">
+
+
+
+
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+
+
+
+    <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+
+
+
+    <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+
+    <link rel="next" href="component.html">
+
+
+    <link rel="prev" href="wxml/import.html">
+
+
+</head>
+<body>
+
+<div class="book with-summary">
+    <div>
+
+        <div class="sub_nav_box">
+            <div class="sub_nav_inner">
+
+
+
+
+                <ul class="top_sub_nav">
+
+
+
+
+                    <li class="sub_nav_item " data-level="1.1" data-path="../../">
+
+                        <a href="../../">
+
+
+                            简易教程
+
+                        </a>
+
+                    </li>
+
+                    <li class="sub_nav_item selected" data-level="1.2" data-path="../MINA.html">
+
+                        <a href="../MINA.html">
+
+
+                            框架
+
+                        </a>
+
+                    </li>
+
+                    <li class="sub_nav_item " data-level="1.3" data-path="../../component/">
+
+                        <a href="../../component/">
+
+
+                            组件
+
+                        </a>
+
+                    </li>
+
+                    <li class="sub_nav_item " data-level="1.4" data-path="../../api/">
+
+                        <a href="../../api/">
+
+
+                            API
+
+                        </a>
+
+                    </li>
+
+                    <li class="sub_nav_item " data-level="1.5" data-path="../../devtools/devtools.html">
+
+                        <a href="../../devtools/devtools.html">
+
+
+                            工具
+
+                        </a>
+
+                    </li>
+
+                    <li class="sub_nav_item " data-level="1.6" data-path="../../qa/qa.html">
+
+                        <a href="../../qa/qa.html">
+
+
+                            Q&amp;A
+
+                        </a>
+
+                    </li>
+
+
+
+
+                </ul>
+
+
+
+
+                <!-- <h1>WXSS</h1> -->
+                <div id="book-search-input" role="search">
+                    <form>
+                        <label for="search-input" class="search-icon" id="js-search-icon"></label>
+                        <input type="text" id="search-input" name="search-input" placeholder="搜索">
+                        <button type="reset" class="clear-input-btn"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="book-summary">
+
+
+            <nav role="navigation">
+
+
+
+
+
+                <ul class="summary">
+
+
+                    <li class="chapter  " data-level="1.2.1" data-path="../structure.html">
+
+                        <a href="../structure.html">
+
+
+                            目录结构
+
+                        </a>
+
+
+
+                    </li>
+
+                    <li class="chapter  " data-level="1.2.2" data-path="../config.html">
+
+                        <a href="../config.html">
+
+
+                            配置
+
+                        </a>
+
+
+
+                    </li>
+
+                    <li class="chapter  open" data-level="1.2.3" data-path="../app-service/">
+
+                        <a href="../app-service/">
+
+
+                            逻辑层
+
+                        </a>
+
+
+
+                        <ul class="articles">
+
+
+                            <li class="chapter  " data-level="1.2.3.1" data-path="../app-service/app.html">
+
+                                <a href="../app-service/app.html">
+
+
+                                    注册程序
+
+                                </a>
+
+
+
+                            </li>
+
+                            <li class="chapter  " data-level="1.2.3.2" data-path="../app-service/page.html">
+
+                                <a href="../app-service/page.html">
+
+
+                                    注册页面
+
+                                </a>
+
+
+
+                            </li>
+
+                            <li class="chapter  " data-level="1.2.3.3" data-path="../app-service/module.html">
+
+                                <a href="../app-service/module.html">
+
+
+                                    模块化
+
+                                </a>
+
+
+
+                            </li>
+
+                            <li class="chapter  " data-level="1.2.3.4" data-path="../app-service/api.html">
+
+                                <a href="../app-service/api.html">
+
+
+                                    API
+
+                                </a>
+
+
+
+                            </li>
+
+
+                        </ul>
+
+                    </li>
+
+                    <li class="chapter  open" data-level="1.2.4" data-path="./">
+
+                        <a href="./">
+
+
+                            视图层
+
+                        </a>
+
+
+
+                        <ul class="articles">
+
+
+                            <li class="chapter  " data-level="1.2.4.1" data-path="wxml/">
+
+                                <a href="wxml/">
+
+
+                                    WXML
+
+                                </a>
+
+
+
+                                <ul class="articles">
+
+
+                                    <li class="chapter  " data-level="1.2.4.1.1" data-path="wxml/data.html">
+
+                                        <a href="wxml/data.html">
+
+
+                                            数据绑定
+
+                                        </a>
+
+
+
+                                    </li>
+
+                                    <li class="chapter  " data-level="1.2.4.1.2" data-path="wxml/conditional.html">
+
+                                        <a href="wxml/conditional.html">
+
+
+                                            条件渲染
+
+                                        </a>
+
+
+
+                                    </li>
+
+                                    <li class="chapter  " data-level="1.2.4.1.3" data-path="wxml/list.html">
+
+                                        <a href="wxml/list.html">
+
+
+                                            列表渲染
+
+                                        </a>
+
+
+
+                                    </li>
+
+                                    <li class="chapter  " data-level="1.2.4.1.4" data-path="wxml/template.html">
+
+                                        <a href="wxml/template.html">
+
+
+                                            模板
+
+                                        </a>
+
+
+
+                                    </li>
+
+                                    <li class="chapter  " data-level="1.2.4.1.5" data-path="wxml/event.html">
+
+                                        <a href="wxml/event.html">
+
+
+                                            事件
+
+                                        </a>
+
+
+
+                                    </li>
+
+                                    <li class="chapter  " data-level="1.2.4.1.6" data-path="wxml/import.html">
+
+                                        <a href="wxml/import.html">
+
+
+                                            引用
+
+                                        </a>
+
+
+
+                                    </li>
+
+
+                                </ul>
+
+                            </li>
+
+                            <li class="chapter active " data-level="1.2.4.2" data-path="wxss.html">
+
+                                <a href="wxss.html">
+
+
+                                    WXSS
+
+                                </a>
+
+
+
+                            </li>
+
+                            <li class="chapter  " data-level="1.2.4.3" data-path="component.html">
+
+                                <a href="component.html">
+
+
+                                    组件
+
+                                </a>
+
+
+
+                            </li>
+
+
+                        </ul>
+
+                    </li>
+
+
+                </ul>
+
+
+            </nav>
+
+
+        </div>
+
+        <div class="book-body">
+
+            <div class="body-inner">
+
+                <!--
+
+                <div class="book-header" role="navigation">
+
+                </div>
+
+
+                 -->
+
+                <div class="page-wrapper" tabindex="-1" role="main">
+                    <div class="page-inner">
+
+                        <div id="book-search-results">
+                            <div class="search-noresults">
+
+                                <section class="normal markdown-section">
+
+                                    <h1 id="wxss">WXSS</h1><p>WXSS(WeiXin Style Sheets)是MINA设计的一套样式语言，用于描述WXML的组件样式。</p><p>WXSS用来决定WXML的组件应该怎么显示。</p><p>为了适应广大的前端开发者，我们的WXSS具有CSS大部分特性。
+                                    同时为了更适合开发微信小程序，我们对CSS进行了扩充以及修改。</p><p>与css相比我们扩展的特性有：</p><ul><li>尺寸单位
+                                </li>
+                                    <li>样式导入
+                                    </li></ul>
+                                    <h3 id="尺寸单位">尺寸单位</h3><ul><li>rpx（responsive pixel）: 可以根据屏幕宽度进行自适应。规定屏幕宽为750rpx。如在iPhone6上，屏幕宽度为375px，共有750个物理像素，则750rpx = 375px = 750物理像素，1rpx = 0.5px = 1物理像素。
+                                </li></ul>
+                                    <table>
+                                        <thead>
+                                        <tr><th>设备</th>
+                                            <th>rpx换算px (屏幕宽度/750)</th>
+                                            <th>px换算rpx (750/屏幕宽度)</th>
+                                        </tr></thead><tbody>
+                                    <tr><td>iPhone5</td>
+                                        <td>1rpx = 0.42px</td>
+                                        <td>1px = 2.34px</td>
+                                    </tr><tr><td>iPhone6</td>
+                                        <td>1rpx = 0.5px</td>
+                                        <td>1px = 2rpx</td>
+                                    </tr><tr><td>iPhone6s</td>
+                                        <td>1rpx = 0.552px</td>
+                                        <td>1px = 1.81rpx</td>
+                                    </tr></tbody></table>
+
+                                    <ul><li>rem（root em）: 规定屏幕宽度为20rem；1rem = (750/20)rpx 。
+                                    </li></ul>
+                                    <p><strong>建议：</strong>开发微信小程序时设计师可以用iPhone6作为视觉稿的标准。</p><h3 id="样式导入">样式导入</h3><p>使用<code>@import</code>语句可以导入外联样式表，<code>@import</code>后跟需要导入的外联样式表的相对路径，用<code>;</code>表示语句结束。</p><p><strong>示例代码：</strong></p><pre><code class="lang-less"><span class="hljs-comment">/** common.wxss **/</span>
+<span class="hljs-selector-class">.small-p</span>{
+  <span class="hljs-attribute">padding</span>:<span class="hljs-number">5px</span>;
+}</code></pre>
+<pre><code class="lang-less"><span class="hljs-comment">/** app.wxss **/</span>
+<span class="hljs-keyword">@import</span> <span class="hljs-string">"common.wxss"</span>;
+<span class="hljs-selector-class">.middle-p</span>:{
+  <span class="hljs-attribute">padding</span>:<span class="hljs-number">15px</span>;
+}</code></pre>
+                                    <h3 id="内联样式">内联样式</h3><p>MINA组件上支持使用style、class属性来控制组件的样式。</p><ul><li>style：静态的样式统一写到class中。style接收动态的样式，在运行时会进行解析，所以不要将静态的样式写进style中，以免影响渲染速度。
+                                </li></ul>
+                                    <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">view</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"color:{{color}};"</span> /&gt;</span></code></pre>
+                                    <ul><li>class：用于指定样式规则，其属性值是样式规则中类选择器名(样式类名)的集合，样式类名不需要带上<code>.</code>，样式类名之间用空格分隔。
+                                    </li></ul>
+                                    <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">view</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"normal_view"</span> /&gt;</span></code></pre>
+                                    <h3 id="选择器">选择器</h3><p>目前支持的选择器有：</p><table>
+                                    <thead>
+                                    <tr><th>选择器</th>
+                                        <th>样例</th>
+                                        <th>样例描述</th>
+                                    </tr></thead><tbody>
+                                <tr><td>.class</td>
+                                    <td><code>.intro</code></td>
+                                    <td>选择所有拥有class="intro"的组件</td>
+                                </tr><tr><td>#id</td>
+                                    <td><code>#firstname</code></td>
+                                    <td>选择拥有id="firstname"的组件</td>
+                                </tr><tr><td>element</td>
+                                    <td><code>view</code></td>
+                                    <td>选择所有view组件</td>
+                                </tr><tr><td>element, element</td>
+                                    <td><code>view</code> <code>checkbox</code></td>
+                                    <td>选择所有文档的view组件和所有的checkbox组件</td>
+                                </tr><tr><td>::after</td>
+                                    <td><code>view::after</code></td>
+                                    <td>在view组件后边插入内容</td>
+                                </tr><tr><td>::before</td>
+                                    <td><code>view::before</code></td>
+                                    <td>在view组件前边插入内容</td>
+                                </tr></tbody></table>
+
+                                    <h3 id="全局样式与局部样式">全局样式与局部样式</h3><p>定义在app.wxss中的样式为全局样式，作用于每一个页面。在page的wxss文件中定义的样式为局部样式，只作用在对应的页面，并会覆盖app.wxss中相同的选择器。</p>
+
+                                </section>
+
+                            </div>
+                            <div class="search-results">
+                                <div class="has-results">
+
+                                    <h1 class="search-results-title"><span class="search-results-count"></span> 个结果 "<span class="search-query"></span>"</h1>
+                                    <ul class="search-results-list"></ul>
+
+                                </div>
+                                <div class="no-results">
+
+                                    <h1 class="search-results-title">没有找到相关内容 "<span class="search-query"></span>"</h1>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="foot" id="footer">
+                    <ul class="links ft">
+                        <li class="links_item"><a href="">关于腾讯</a></li>
+                        <li class="links_item"><a href="">服务协议</a></li>
+                        <li class="links_item"><a href="">运营规范</a></li>
+                        <li class="links_item"><a href="">辟谣中心</a></li>
+                        <li class="links_item"><a href="">客服中心</a></li>
+                        <li class="links_item"><a href="">联系邮箱</a></li>
+                        <li class="links_item"><a href="">侵权投诉</a></li>
+                        <li class="links_item">
+                            <p class="copyright">Copyright © 2012-<span id="s_copyright_year"></span> Tencent. All Rights Reserved.</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+
+            <a href="wxml/import.html" class="navigation navigation-prev " aria-label="Previous page: 引用">
+                <i class="fa fa-angle-left"></i>
+            </a>
+
+
+            <a href="component.html" class="navigation navigation-next " aria-label="Next page: 组件">
+                <i class="fa fa-angle-right"></i>
+            </a>
+
+
+
+        </div>
+    </div>
+
+
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+
+
+    <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+
+
+
+    <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+
+
+
+    <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+
+
+
+    <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"WXSS","level":"1.2.4.2","depth":3,"next":{"title":"组件","level":"1.2.4.3","depth":3,"path":"framework/view/component.md","ref":"framework/view/component.md","articles":[]},"previous":{"title":"引用","level":"1.2.4.1.6","depth":4,"path":"framework/view/wxml/import.md","ref":"framework/view/wxml/import.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"ignoreSpecialCharacters":false,"maxIndexSize":1000000},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"file":{"path":"framework/view/wxss.md","mtime":"2016-09-22T03:20:50.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-09-22T09:40:22.799Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+
+
+
+
+</div></body></html>
